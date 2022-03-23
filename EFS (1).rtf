@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fswiss\fcharset0 Arial-BoldMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh16880\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 EFS: \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \expnd0\expndtw0\kerning0
+The Encrypted File System, or EFS, 
+\f2\b provides an additional level of security for files and directories
+\f1\b0 . \
+It provides cryptographic protection of individual files on NFS file system volumes using a public-key system.
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+STORAGE TYPES :\
+1.	SERVER LEVEL	:	EBS\
+2.	SERVER LESS		:	S3\
+3.	FILES LEVEL		:	EFS\
+\
+KEYPOINTS:\
+1.	EFS WORKS LIKE NFS FOR AWS & ON-PREM.\
+2.	STORAGE LIMITS TO PETA BYTES (UP TO 1024)\
+3.	CAN SHARE WITH 1000\'92S OF SERVERS IN MULTIPLE AZ\'92S.\
+4.	WE CAN LAUNCH 10 EFS PER ACCOUNT.\
+5.	IT IS HIGHLY SCALABLE, DURABLE AND AVAILABLE.\
+6.	SUPPORTS THE ENCRYPTION.\
+\
+CREATION:\
+\
+\
+1.	EFS \'97 > CREATE \'97 > NAME \'97 > VPC \'97 > CREATE\
+2.	OPEN \'97 > NETWORK \'97 >  EDIT THE AZ\'92S.\
+3.	CREATE A NSTANCE WITH SAME  (ADD EFS THERE) ADD NFS IN SG \'97 > SOURCE: ANYWHERE\
+4.	CONNECT TO SERVER\
+5.	yum install amazon-efs-utils -y\
+6.	MAKE A DIRECTORY\
+7.	GO TO EFS \'97 > ATTACH \'97 > MOUNT VIA DNS \'97> COPY PASTE  (REPLACE EFS WITH DIR NAME)\
+8.	CREATE ANOTHE INSTANCE WITH SAME VPC AND SG\
+9.	CONNECT AND GIVE SAME COMMAND\
+10.	yum install amazon-efs-utils -y\
+11.	COPY THE NFS CLIENT \
+12.	CREATE A DIRECTORY WITH SAME NAME AND CHECK THE FILES\
+\
+\
+\
+==========================\
+\
+EBS\
+\
+EBS \'97 > CREATE \'97 > MAME \'97 > ACTION \'97 >  ATTACH \'97 >  \
+\
+LOGIN \'97 >  fdisk -l \'97 > it will show\
+}
